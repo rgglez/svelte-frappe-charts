@@ -1,5 +1,3 @@
-
-
 import Base from './components/base.svelte';
 
 

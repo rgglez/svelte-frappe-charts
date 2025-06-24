@@ -9,11 +9,11 @@
 
 Makes it easy to use [frappe-charts](https://frappe.io/charts) in your [Svelte](https://svelte.dev/) project.
 
-### About this fork
+## About this fork
 
 This fork patches a security vulnerability and updates the Svelte dependency to **version 5+**. Take this into account.
 
-### Installation
+## Installation
 
 ```bash
 yarn add svelte @rgglez/svelte-frappe-charts
@@ -21,11 +21,11 @@ yarn add svelte @rgglez/svelte-frappe-charts
 npm i -S svelte @rgglez/svelte-frappe-charts
 ```
 
-### Dependencies
+## Dependencies
 
-* **svelte** >= 5.0.0
+- **svelte** >= 5.0.0
 
-### Usage
+## Usage
 
 Use the chart in your Svelte project with ease:
 
@@ -48,13 +48,13 @@ Use the chart in your Svelte project with ease:
 
 The component API directly matches the [the configuration of `frappe-charts`](https://frappe.io/charts/docs/reference/configuration).
 
-### Updating data
+## Updating data
 
 There are two ways to update data in a chart: either in adding and removing individual points, or updating the existing data with an entirely new set of data points.
 
-#### Updating individual data points
+## Updating individual data points
 
-##### addDataPoint
+### addDataPoint
 
 Add a data point to the chart, increasing the length of the dataset.
 
@@ -85,7 +85,7 @@ Add a data point to the chart, increasing the length of the dataset.
 
 [More info on `addDataPoint`](https://frappe.io/charts/docs/reference/api#adddatapoint).
 
-##### removeDataPoint
+### removeDataPoint
 
 Remove a data point from the chart, reducing the length of the dataset.
 
@@ -116,7 +116,7 @@ Remove a data point from the chart, reducing the length of the dataset.
 
 [More info on `removeDataPoint`](https://frappe.io/charts/docs/reference/api#removedatapoint).
 
-#### Updating full data
+### Updating full data
 
 Update the entire data, including annotations, by passing the entire new data object to update.
 
@@ -197,11 +197,11 @@ You can easily export a chart ([see Exporting](https://frappe.io/charts/docs/exp
 </button>
 ```
 
-### Contributing
+## Contributing
 
 [Issues](https://github.com/rgglez/svelte-frappe-charts/issues/new) and pull requests are greatly welcome!
 
----
+## License
 
 Original work by [Dave](http://himynameisdave.com). 
 
