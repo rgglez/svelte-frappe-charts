@@ -1,47 +1,37 @@
-<div align="center" margin="0 auto 20px">
-  <h1>svelte-frappe-charts</h1>
-  <p style="font-style: italic;">📈 Svelte bindings for <a href="https://frappe.io/charts">frappe-charts.</a></p>
-  <div>
-    <a href='https://github.com/himynameisdave/svelte-frappe-charts/actions?query=workflow%3Atest+branch%3Amain'>
-      <img src="https://github.com/himynameisdave/svelte-frappe-charts/workflows/test/badge.svg" alt="GitHub Actions - Test Workflow Badge" />
-    </a>
-    <a href='https://github.com/himynameisdave/svelte-frappe-charts/actions?query=workflow%3Aoutdated+branch%3Amain'>
-      <img src="https://github.com/himynameisdave/svelte-frappe-charts/workflows/outdated/badge.svg" alt="GitHub Actions - Test Workflow Badge" />
-    </a>
-    <a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fhimynameisdave%2Fsvelte-frappe-charts?ref=badge_shield" alt="FOSSA Status">
-      <img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fhimynameisdave%2Fsvelte-frappe-charts.svg?type=shield"/>
-    </a>
-    <a href="https://www.npmjs.com/package/svelte-frappe-charts">
-        <img src="https://img.shields.io/npm/dm/svelte-frappe-charts.svg" alt="Downloads">
-    </a>
-    <a title="MadeWithSvelte.com Shield" href="https://madewithsvelte.com/p/svelte-frappe-charts/shield-link">
-      <img src="https://madewithsvelte.com/storage/repo-shields/2274-shield.svg" />
-    </a>
-  </div>
-</div>
+# svelte-frappe-charts
 
----
-
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+![GitHub all releases](https://img.shields.io/github/downloads/rgglez/svelte-frappe-charts/total) 
+![GitHub issues](https://img.shields.io/github/issues/rgglez/svelte-frappe-charts) 
+![GitHub commit activity](https://img.shields.io/github/commit-activity/y/rgglez/svelte-frappe-charts)
+![Downloads](https://img.shields.io/npm/dm/@rgglez/svelte-frappe-charts.svg)
+![MadeWithSvelte](https://madewithsvelte.com/storage/repo-shields/2274-shield.svg)
 
 Makes it easy to use [frappe-charts](https://frappe.io/charts) in your [Svelte](https://svelte.dev/) project.
 
+### About this fork
+
+This fork patches a security vulnerability and updates the Svelte dependency to **version 5+**. Take this into account.
+
 ### Installation
 
-```
-yarn add svelte svelte-frappe-charts
+```bash
+yarn add svelte @rgglez/svelte-frappe-charts
 
-npm i -S svelte svelte-frappe-charts
+npm i -S svelte @rgglez/svelte-frappe-charts
 ```
 
-> **Note**: Assumes you are using `>= svelte@3.0.0`.
+### Dependencies
+
+* **svelte** >= 5.0.0
 
 ### Usage
 
 Use the chart in your Svelte project with ease:
 
-```svelte
+```javascript
 <script>
-  import Chart from 'svelte-frappe-charts';
+  import Chart from '@rgglez/svelte-frappe-charts';
 
   let data = {
     labels: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
@@ -68,9 +58,9 @@ There are two ways to update data in a chart: either in adding and removing indi
 
 Add a data point to the chart, increasing the length of the dataset.
 
-```svelte
+```javascript
 <script>
-  import Chart from 'svelte-frappe-charts';
+  import Chart from '@rgglez/svelte-frappe-charts';
 
   let data = {
     labels: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
@@ -99,9 +89,9 @@ Add a data point to the chart, increasing the length of the dataset.
 
 Remove a data point from the chart, reducing the length of the dataset.
 
-```svelte
+```javascript
 <script>
-  import Chart from 'svelte-frappe-charts';
+  import Chart from '@rgglez/svelte-frappe-charts';
 
   let data = {
     labels: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
@@ -130,9 +120,9 @@ Remove a data point from the chart, reducing the length of the dataset.
 
 Update the entire data, including annotations, by passing the entire new data object to update.
 
-```svelte
+```javascript
 <script>
-  import Chart from 'svelte-frappe-charts';
+  import Chart from '@rgglez/svelte-frappe-charts';
 
   let data = {
     labels: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
@@ -167,9 +157,9 @@ Update the entire data, including annotations, by passing the entire new data ob
 [Chart navigation](https://frappe.io/charts/docs/update_state/navigation) can be used when the `isNavigable` prop is set on the `Chart` component.
 Once it is set, the `data-select` event is propagated and can be handled in Svelte's standard ways (see the Events section of the tutorial and examples, and [the API docs](https://svelte.dev/docs#on_component_event)).
 
-```svelte
+```javascript
 <script>
-  import Chart from "svelte-frappe-charts";
+  import Chart from "@rgglez/svelte-frappe-charts";
 
   let data = {
     labels: [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun", "Mon" ],
@@ -193,7 +183,7 @@ Once it is set, the `data-select` event is propagated and can be handled in Svel
 
 You can easily export a chart ([see Exporting](https://frappe.io/charts/docs/exporting/images)) as an SVG by storing a reference to the `<Chart />` component, and then calling `exportChart` on it:
 
-```svelte
+```javascript
 <script>
   // ...
 
@@ -209,8 +199,14 @@ You can easily export a chart ([see Exporting](https://frappe.io/charts/docs/exp
 
 ### Contributing
 
-[Issues](https://github.com/himynameisdave/svelte-frappe-charts/issues/new) and pull requests are greatly welcome!
+[Issues](https://github.com/rgglez/svelte-frappe-charts/issues/new) and pull requests are greatly welcome!
 
 ---
 
-_✌️Created by [Dave](http://himynameisdave.com). Licenced under MIT._
+Original work by [Dave](http://himynameisdave.com). 
+
+This fork: 
+
+Copyright 2025 Rodolfo González González.
+
+Licenced under [MIT](https://mit-license.org/). Read the [LICENSE](LICENSE) file.
