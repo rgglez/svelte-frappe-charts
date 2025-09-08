@@ -6,6 +6,8 @@
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/rgglez/svelte-frappe-charts)
 ![Downloads](https://img.shields.io/npm/dm/@rgglez/svelte-frappe-charts.svg)
 ![MadeWithSvelte](https://madewithsvelte.com/storage/repo-shields/2274-shield.svg)
+![GitHub stars](https://img.shields.io/github/stars/rgglez/svelte-frappe-charts?style=social)
+![GitHub forks](https://img.shields.io/github/forks/rgglez/svelte-frappe-charts?style=social)
 
 Makes it easy to use [frappe-charts](https://frappe.io/charts) in your [Svelte](https://svelte.dev/) project.
 
