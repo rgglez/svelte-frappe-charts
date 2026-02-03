@@ -209,6 +209,6 @@ Original work by [Dave](http://himynameisdave.com).
 
 This fork: 
 
-Copyright 2025 Rodolfo González González.
+Copyright 2026 Rodolfo González González.
 
 Licenced under [MIT](https://mit-license.org/). Read the [LICENSE](LICENSE) file.
